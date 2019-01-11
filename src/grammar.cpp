@@ -1,4 +1,4 @@
-#include "sdptransform.hpp"
+#include "../include/sdptransform.hpp"
 
 namespace sdptransform
 {
@@ -43,7 +43,7 @@ namespace sdptransform
 						// names:
 						{ "username", "sessionId", "sessionVersion", "netType", "ipVer", "address" },
 						// types:
-						{ 's', 'd', 'd', 's', 'd', 's' },
+						{ 's', 's', 'd', 's', 'd', 's' },
 						// format:
 						"%s %d %d %s IP%d %s"
 					}
@@ -300,7 +300,7 @@ namespace sdptransform
 						// names:
 						{ "payload", "codec", "rate", "encoding" },
 						// types:
-						{ 'd', 's', 'd', 's' },
+						{ 'd', 's', 'd', 'd' },
 						// format:
 						"",
 						// formatFunc:
@@ -397,7 +397,7 @@ namespace sdptransform
 						// names:
 						{ "payload", "type", "subtype" },
 						// types:
-						{ 's', 's', 's' },
+						{ 'd', 's', 's' },
 						// format:
 						"",
 						// formatFunc:
